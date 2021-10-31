@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="easy">
+                <a href="index.html"> <img src="img/logo.png" width="90px" height="80px"></a>
+            </div>
+            <ul class="anim">
+                <li class="current"><a href="personal.html" data-name="personal">Своя Ставка</a></li>
+                <li><a href="FL.html" data-name="FL">Физ. лицо</a></li>
+                <li><a href="IP.html" data-name="IP">Предприниматель</a></li>
+                <li><a href="SE.html" data-name="NPD">Самозанятые</a></li>
+            </ul>    
+        </div> 
+    </header>
+    <hr>
+    <div class="flex-wrapper">
+        <div class="calc-content">
+                <div class="calc_title">
+                    <h1>
+                        РАССЧИТАЙТЕ НАЛОГ
+                    </h1>
+                </div>
+                
+                <div class="calc_content">
+                    <div class="calc_content_left">
+                        <div class="calc_content_left_input>">
+                            <div class="input-wrapper">
+                                <div class="title"><h2>Сумма дохода</h2></div>
+                                <div class="input">
+                                    <input type="number" id="income" value="0" >
+                                </div>
+                                <div class="input">
+                                    <input type="range" min="0" max="1000000" id="income_range" value="0" class="input_range">
+                                </div>
+                            </div>                           
+                        </div>    
+                        <div class="title_pole1"><h2>Введите ставку</h2></div>
+                        <div class="pole1">
+                            <input type="text" id="svoya" value="0">
+                        </div>    
+                        <div class="pole">
+                            <input type="range" min="0" max="40" id="svoya_range" value="0" class="per_range">
+                        </div>                
+                    </div>
+                
+                    <div class="calc_content_right">
+                        <div class="final_tax">
+                            <div class="title"> <h2>Итоговый налог</h2> </div>
+                            <div class="value_oh" id="final_tax">0<span class="letter">₽</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> 
+    <script src="personal.js"></script>        
+</body>
+</html>
