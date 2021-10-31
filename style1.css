@@ -436,9 +436,7 @@ h3, h4, h5{
     margin-top: 10%;
     font-size: 140%;
   }
-  .calc_content{
-    background-color: #eb1313;
-  }
+  
 @media screen and (min-width: 1600px )  {
   .text2{
     font-size: 270%;
